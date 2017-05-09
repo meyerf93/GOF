@@ -1,4 +1,7 @@
 sceneSetups:
+- path: C:/Users/Danick/Desktop/goe temp/GOF/Assets/Scenes/MainMenu.unity
+  isLoaded: 0
+  isActive: 0
 - path: Assets/Scenes/First_level.unity
   isLoaded: 1
   isActive: 1
