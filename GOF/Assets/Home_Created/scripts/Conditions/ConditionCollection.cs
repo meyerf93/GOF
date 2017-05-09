@@ -15,8 +15,8 @@ public class ConditionCollection : ScriptableObject
                 return false;
         }
 
-        if(reactionCollection != null)
-            reactionCollection.react();
+        if(reactionCollection)
+            reactionCollection.React();
 
         return true;
     }
