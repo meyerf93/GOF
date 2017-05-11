@@ -5,3 +5,6 @@ sceneSetups:
 - path: Assets/Scenes/shop_scene.unity
   isLoaded: 1
   isActive: 1
+- path: Assets/Scenes/First_level.unity
+  isLoaded: 0
+  isActive: 0
