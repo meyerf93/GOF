@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4509321, g: 0.5008129, b: 0.5744824, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1347,7 +1347,7 @@ Prefab:
     - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1669,12 +1669,38 @@ Transform:
   m_PrefabParentObject: {fileID: 4000012308559476, guid: 261ce4e3efb0842449b057f8b3cc37d2,
     type: 2}
   m_PrefabInternal: {fileID: 206091498}
---- !u!114 &213052598 stripped
+--- !u!114 &206281439
 MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Wood Cooker Purchased !
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
+--- !u!114 &213052598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 114876288594072478, guid: 46fa6ff4470251d438542696b3a8673f,
     type: 2}
-  m_PrefabInternal: {fileID: 1241198383}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1335365348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68fba9b055ffddb41a69af946e216e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionLocation: {fileID: 557734482}
+  conditionCollections:
+  - {fileID: 1032717543}
+  - {fileID: 1840980833}
+  - {fileID: 1730996872}
+  defaultReactionCollection: {fileID: 370021494}
 --- !u!1 &222369596
 GameObject:
   m_ObjectHideFlags: 0
@@ -2235,6 +2261,73 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011044878518, guid: 458d9a11c49483c45b95e494d0136e0e,
     type: 2}
   m_PrefabInternal: {fileID: 308470301}
+--- !u!1001 &309159648
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1241198384}
+    m_Modifications:
+    - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+        type: 2}
+      propertyPath: reactions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+        type: 2}
+      propertyPath: reactions.Array.data[0]
+      value: 
+      objectReference: {fileID: 1978185956}
+    - target: {fileID: 1891366390125540, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_Name
+      value: GasCookerReaction
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &309159649 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+    type: 2}
+  m_PrefabInternal: {fileID: 309159648}
+--- !u!114 &309159650 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+    type: 2}
+  m_PrefabInternal: {fileID: 309159648}
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
 --- !u!1001 &309196556
 Prefab:
   m_ObjectHideFlags: 0
@@ -2632,6 +2725,51 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 474952, guid: 10648b584de849244acc9f505465b628, type: 2}
   m_PrefabInternal: {fileID: 368257298}
+--- !u!1 &370021492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1226904088226434, guid: c67e65269ec1b504e979567cf9c0bac1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1241198383}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 370021493}
+  - component: {fileID: 370021494}
+  m_Layer: 0
+  m_Name: defaultReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &370021493
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4792246376593114, guid: c67e65269ec1b504e979567cf9c0bac1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1241198383}
+  m_GameObject: {fileID: 370021492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1241198384}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &370021494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114363326371014572, guid: c67e65269ec1b504e979567cf9c0bac1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1241198383}
+  m_GameObject: {fileID: 370021492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 702619254}
 --- !u!1001 &380252826
 Prefab:
   m_ObjectHideFlags: 0
@@ -3578,6 +3716,11 @@ Prefab:
       propertyPath: m_Speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114779324752248798, guid: aa7ba757c685c18448e105b782038517,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa7ba757c685c18448e105b782038517, type: 2}
   m_IsPrefabParent: 0
@@ -3731,8 +3874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  condition: {fileID: 114625448668298150, guid: caaf50ae650376d46a396bcfb4f2af59,
-    type: 2}
+  condition: {fileID: 0}
   satisfied: 1
 --- !u!1 &517095973
 GameObject:
@@ -4026,6 +4168,36 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 458d9a11c49483c45b95e494d0136e0e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &557734481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1531196008025800, guid: 46fa6ff4470251d438542696b3a8673f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 557734482}
+  m_Layer: 0
+  m_Name: interactableLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &557734482
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4617490576865406, guid: 46fa6ff4470251d438542696b3a8673f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 557734481}
+  m_LocalRotation: {x: 0, y: 0.86602545, z: 0, w: 0.49999994}
+  m_LocalPosition: {x: 0.69, y: 0, z: -2.07}
+  m_LocalScale: {x: 1, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1241198384}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 120, z: 0}
 --- !u!1001 &570700294
 Prefab:
   m_ObjectHideFlags: 0
@@ -6758,6 +6930,35 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011044878518, guid: 458d9a11c49483c45b95e494d0136e0e,
     type: 2}
   m_PrefabInternal: {fileID: 1030717462}
+--- !u!114 &1031197035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7232bcc57a8ab344bb6b69e23a95b453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: gasCookerPurchased
+  satisfied: 1
+  hash: -1930479998
+--- !u!114 &1032717543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52abbfbd6ff85c3429c43b20d4cd6066, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: hasWoodCooker
+  requiredConditions:
+  - {fileID: 1143868840}
+  reactionCollection: {fileID: 1151722789}
 --- !u!1 &1033305192
 GameObject:
   m_ObjectHideFlags: 0
@@ -6996,6 +7197,73 @@ Transform:
   m_Father: {fileID: 806466929}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1091534448
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1241198384}
+    m_Modifications:
+    - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+        type: 2}
+      propertyPath: reactions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891366390125540, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_Name
+      value: ElectricCookerPurchased
+      objectReference: {fileID: 0}
+    - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+        type: 2}
+      propertyPath: reactions.Array.data[0]
+      value: 
+      objectReference: {fileID: 1336849311}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1091534449 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1091534448}
+--- !u!114 &1091534450 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1091534448}
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
 --- !u!1001 &1092659769
 Prefab:
   m_ObjectHideFlags: 0
@@ -7523,6 +7791,87 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400998, guid: 9f10e8e623bcd7647b88a5f824582a63, type: 2}
   m_PrefabInternal: {fileID: 1142301472}
+--- !u!114 &1143868840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7232bcc57a8ab344bb6b69e23a95b453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: woodCookerPurchased
+  satisfied: 1
+  hash: 1319602860
+--- !u!1001 &1151722787
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1241198384}
+    m_Modifications:
+    - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+        type: 2}
+      propertyPath: reactions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+        type: 2}
+      propertyPath: reactions.Array.data[0]
+      value: 
+      objectReference: {fileID: 206281439}
+    - target: {fileID: 1891366390125540, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+      propertyPath: m_Name
+      value: WoodCookerReaction
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1151722788 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1151722787}
+--- !u!114 &1151722789 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1151722787}
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
 --- !u!1001 &1156232040
 Prefab:
   m_ObjectHideFlags: 0
@@ -7643,20 +7992,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011044878518, guid: 458d9a11c49483c45b95e494d0136e0e,
     type: 2}
   m_PrefabInternal: {fileID: 1188851452}
---- !u!114 &1219636793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  condition: {fileID: 114083897748240928, guid: caaf50ae650376d46a396bcfb4f2af59,
-    type: 2}
-  satisfied: 1
 --- !u!1001 &1239851740
 Prefab:
   m_ObjectHideFlags: 0
@@ -7732,148 +8067,67 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 740045840}
+    m_TransformParent: {fileID: 1241198384}
     m_Modifications:
-    - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
-        type: 2}
-      propertyPath: reactions.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
+    - target: {fileID: 4792246376593114, guid: c67e65269ec1b504e979567cf9c0bac1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 7.3
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
+    - target: {fileID: 4792246376593114, guid: c67e65269ec1b504e979567cf9c0bac1, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
+    - target: {fileID: 4792246376593114, guid: c67e65269ec1b504e979567cf9c0bac1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -9
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
+    - target: {fileID: 4792246376593114, guid: c67e65269ec1b504e979567cf9c0bac1, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
+    - target: {fileID: 4792246376593114, guid: c67e65269ec1b504e979567cf9c0bac1, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
+    - target: {fileID: 4792246376593114, guid: c67e65269ec1b504e979567cf9c0bac1, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
+    - target: {fileID: 4792246376593114, guid: c67e65269ec1b504e979567cf9c0bac1, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
+    - target: {fileID: 4792246376593114, guid: c67e65269ec1b504e979567cf9c0bac1, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1993154626142548, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
-      propertyPath: m_Name
-      value: KitchenInteractable
-      objectReference: {fileID: 0}
-    - target: {fileID: 65103094466341720, guid: 46fa6ff4470251d438542696b3a8673f,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 5.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 65103094466341720, guid: 46fa6ff4470251d438542696b3a8673f,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 65103094466341720, guid: 46fa6ff4470251d438542696b3a8673f,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 65103094466341720, guid: 46fa6ff4470251d438542696b3a8673f,
-        type: 2}
-      propertyPath: m_Center.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617490576865406, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617490576865406, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617490576865406, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617490576865406, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617490576865406, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617490576865406, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.49999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617490576865406, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617490576865406, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.86602545
-      objectReference: {fileID: 0}
-    - target: {fileID: 4617490576865406, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
+    - target: {fileID: 114363326371014572, guid: c67e65269ec1b504e979567cf9c0bac1,
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
       objectReference: {fileID: 702619254}
-    - target: {fileID: 114667243433982110, guid: 46fa6ff4470251d438542696b3a8673f,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 496691079}
-    - target: {fileID: 114667243433982110, guid: 46fa6ff4470251d438542696b3a8673f,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnInteractableClick
-      objectReference: {fileID: 0}
-    - target: {fileID: 114667243433982110, guid: 46fa6ff4470251d438542696b3a8673f,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114667243433982110, guid: 46fa6ff4470251d438542696b3a8673f,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: Interactable, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 114667243433982110, guid: 46fa6ff4470251d438542696b3a8673f,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 213052598}
-    - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
-        type: 2}
-      propertyPath: reactions.Array.data[1]
-      value: 
-      objectReference: {fileID: 1219636793}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: c67e65269ec1b504e979567cf9c0bac1, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1241198384 stripped
+--- !u!4 &1241198384
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f,
     type: 2}
-  m_PrefabInternal: {fileID: 1241198383}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1335365348}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.3, y: 0, z: -9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 557734482}
+  - {fileID: 370021493}
+  - {fileID: 1151722788}
+  - {fileID: 309159649}
+  - {fileID: 1091534449}
+  m_Father: {fileID: 740045840}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1243385191
 Prefab:
   m_ObjectHideFlags: 0
@@ -8275,8 +8529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  condition: {fileID: 114848801246069720, guid: caaf50ae650376d46a396bcfb4f2af59,
-    type: 2}
+  condition: {fileID: 0}
   satisfied: 1
 --- !u!1001 &1285186084
 Prefab:
@@ -8529,6 +8782,83 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 469366, guid: e011986a11d065b4c83cbb3d15c3f8c1, type: 2}
   m_PrefabInternal: {fileID: 1329263908}
+--- !u!1 &1335365348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1993154626142548, guid: 46fa6ff4470251d438542696b3a8673f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1241198384}
+  - component: {fileID: 1335365350}
+  - component: {fileID: 1335365349}
+  - component: {fileID: 213052598}
+  m_Layer: 0
+  m_Name: KitchenInteractable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1335365349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114667243433982110, guid: 46fa6ff4470251d438542696b3a8673f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1335365348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 496691079}
+          m_MethodName: OnInteractableClick
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 213052598}
+            m_ObjectArgumentAssemblyTypeName: Interactable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!65 &1335365350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65103094466341720, guid: 46fa6ff4470251d438542696b3a8673f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1335365348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.9, y: 3, z: 9}
+  m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!114 &1336849311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Electric Cooker Purchased !
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1001 &1338208694
 Prefab:
   m_ObjectHideFlags: 0
@@ -8749,7 +9079,7 @@ Prefab:
     - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -9343,6 +9673,20 @@ MonoBehaviour:
   message: You're in the Bedroom
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!114 &1562677177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7232bcc57a8ab344bb6b69e23a95b453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: electricCookerPurchased
+  satisfied: 1
+  hash: -1761069680
 --- !u!1001 &1570620456
 Prefab:
   m_ObjectHideFlags: 0
@@ -10227,6 +10571,21 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 442006, guid: 67a407d86eaaff541a27cde69277a387, type: 2}
   m_PrefabInternal: {fileID: 1730772162}
+--- !u!114 &1730996872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52abbfbd6ff85c3429c43b20d4cd6066, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: hasElectricCooker
+  requiredConditions:
+  - {fileID: 1562677177}
+  reactionCollection: {fileID: 1091534450}
 --- !u!1001 &1742485453
 Prefab:
   m_ObjectHideFlags: 0
@@ -10647,8 +11006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  condition: {fileID: 114545760350601016, guid: caaf50ae650376d46a396bcfb4f2af59,
-    type: 2}
+  condition: {fileID: 0}
   satisfied: 1
 --- !u!1001 &1802701820
 Prefab:
@@ -11164,6 +11522,21 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011044878518, guid: 458d9a11c49483c45b95e494d0136e0e,
     type: 2}
   m_PrefabInternal: {fileID: 1834811705}
+--- !u!114 &1840980833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52abbfbd6ff85c3429c43b20d4cd6066, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: hasGasCooker
+  requiredConditions:
+  - {fileID: 1031197035}
+  reactionCollection: {fileID: 309159650}
 --- !u!1001 &1844683560
 Prefab:
   m_ObjectHideFlags: 0
@@ -11230,8 +11603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  condition: {fileID: 114770483085525112, guid: caaf50ae650376d46a396bcfb4f2af59,
-    type: 2}
+  condition: {fileID: 0}
   satisfied: 1
 --- !u!1001 &1847384946
 Prefab:
@@ -11827,7 +12199,7 @@ Prefab:
     - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -11950,7 +12322,7 @@ Prefab:
     - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114667243433982110, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
@@ -12300,6 +12672,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1972495449}
   m_Mesh: {fileID: 4300000, guid: 656f375b779461048b0cdde1b80ef0b0, type: 3}
+--- !u!114 &1978185956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Gas Cooker Purchased
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1 &2027049113
 GameObject:
   m_ObjectHideFlags: 0

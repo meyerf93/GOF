@@ -33,11 +33,6 @@ MonoBehaviour:
   - {fileID: 114406084487780956}
   - {fileID: 114669506197589680}
   - {fileID: 114959788283693394}
-  - {fileID: 114770483085525112}
-  - {fileID: 114545760350601016}
-  - {fileID: 114083897748240928}
-  - {fileID: 114625448668298150}
-  - {fileID: 114848801246069720}
 --- !u!114 &114007220300094258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,20 +61,6 @@ MonoBehaviour:
   description: simpleMultimediaPurchased
   satisfied: 0
   hash: -164852783
---- !u!114 &114083897748240928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7232bcc57a8ab344bb6b69e23a95b453, type: 3}
-  m_Name: playerInKitchen
-  m_EditorClassIdentifier: 
-  description: playerInKitchen
-  satisfied: 0
-  hash: -1053016275
 --- !u!114 &114117292589539374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,20 +187,6 @@ MonoBehaviour:
   description: woodWaterHeaterPurchased
   satisfied: 0
   hash: 1493235236
---- !u!114 &114545760350601016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7232bcc57a8ab344bb6b69e23a95b453, type: 3}
-  m_Name: playerInLivingRoom
-  m_EditorClassIdentifier: 
-  description: playerInLivingRoom
-  satisfied: 0
-  hash: 946145381
 --- !u!114 &114613532173838470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,20 +201,6 @@ MonoBehaviour:
   description: fuelHeatingPurchased
   satisfied: 0
   hash: -1994624981
---- !u!114 &114625448668298150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7232bcc57a8ab344bb6b69e23a95b453, type: 3}
-  m_Name: playerInBathRoom
-  m_EditorClassIdentifier: 
-  description: playerInBathRoom
-  satisfied: 0
-  hash: 1953847853
 --- !u!114 &114669506197589680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,20 +229,6 @@ MonoBehaviour:
   description: microwaveOvenPurchased
   satisfied: 0
   hash: 1374636286
---- !u!114 &114770483085525112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7232bcc57a8ab344bb6b69e23a95b453, type: 3}
-  m_Name: playerInBedRoom
-  m_EditorClassIdentifier: 
-  description: playerInBedRoom
-  satisfied: 0
-  hash: 1840782710
 --- !u!114 &114785595945802816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,20 +271,6 @@ MonoBehaviour:
   description: woodOvenPurchased
   satisfied: 0
   hash: 1271751539
---- !u!114 &114848801246069720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7232bcc57a8ab344bb6b69e23a95b453, type: 3}
-  m_Name: playerInWorkRoom
-  m_EditorClassIdentifier: 
-  description: playerInWorkRoom
-  satisfied: 0
-  hash: -2115467278
 --- !u!114 &114851245668720206
 MonoBehaviour:
   m_ObjectHideFlags: 0
