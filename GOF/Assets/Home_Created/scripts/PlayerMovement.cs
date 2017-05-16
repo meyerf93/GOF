@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 {
 	public Animator animator;
 	public NavMeshAgent agent;
+	public SaveData playerSaveData;
 	public float inputHoldDelay = 0.5f;
 	public float turnSpeedTreshold = 0.5f;
 	public float speedDampTime = 0.1f;
@@ -25,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
 
 	private readonly int hashSpeedPara = Animator.StringToHash("Speed");
 	private readonly int hashLocomotionTag = Animator.StringToHash("Locomotion");
+
+	public const string startingPositionKey = "starting position";
 
 	private void Start()
 	{
