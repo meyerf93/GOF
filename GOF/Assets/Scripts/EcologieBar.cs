@@ -4,11 +4,11 @@ using UnityEngine;
 
 //Used for the Health Bar
 
-public class PlayerHealth : MonoBehaviour {
+public class EcologieBar: MonoBehaviour {
 
     public float max_Health = 100f;
     public float cur_Health = 0f;
-    public GameObject healthBar;
+    public GameObject ecologieBar;
 
 	// Use this for initialization
 	void Start () {
@@ -30,8 +30,8 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     public void setHealthBar(float myHealth) {
-        //myHealth value 6-1
+        //myHealth value between 0 and 1
 
-        healthBar.transform.localScale = new Vector3(healthBar.transform.localScale.x, myHealth, healthBar.transform.localScale.z);
+        ecologieBar.transform.localScale = new Vector3(myHealth, ecologieBar.transform.localScale.y, ecologieBar.transform.localScale.z);
     }
 }
