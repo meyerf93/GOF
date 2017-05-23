@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 28195159}
   - component: {fileID: 28195158}
   m_Layer: 5
-  m_Name: Button
+  m_Name: btnBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -880,6 +880,7 @@ GameObject:
   - component: {fileID: 52083351}
   - component: {fileID: 52083352}
   - component: {fileID: 52083353}
+  - component: {fileID: 52083354}
   m_Layer: 5
   m_Name: InternIsolation
   m_TagString: Untagged
@@ -962,6 +963,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 52083354}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -973,9 +985,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 52083350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &52083354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 52083350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 662054674}
 --- !u!1 &58967800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,6 +1171,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 66152742}
+--- !u!114 &68302554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 555085308}
+  modifierDescription: microWaveOven
+  moneyModifierSlider: {fileID: 1669475255}
+  ecoModifierSlider: {fileID: 1019080407}
+  comfortModifierSlider: {fileID: 1855404662}
 --- !u!1 &68483046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,7 +1476,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 3
   m_WholeNumbers: 1
-  m_Value: 2
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2431,6 +2472,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &156692537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 359772134}
+  modifierDescription: ledLight
+  moneyModifierSlider: {fileID: 1177872530}
+  ecoModifierSlider: {fileID: 1414365367}
+  comfortModifierSlider: {fileID: 2036815422}
 --- !u!1 &158051962
 GameObject:
   m_ObjectHideFlags: 0
@@ -3192,6 +3249,7 @@ GameObject:
   - component: {fileID: 212866891}
   - component: {fileID: 212866893}
   - component: {fileID: 212866892}
+  - component: {fileID: 212866894}
   m_Layer: 5
   m_Name: LargeMultimedia
   m_TagString: Untagged
@@ -3228,7 +3286,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 212866890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &212866893
@@ -3285,9 +3343,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 212866894}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &212866894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 212866890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 717654506}
 --- !u!1 &233295054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3468,6 +3550,7 @@ GameObject:
   - component: {fileID: 248212641}
   - component: {fileID: 248212643}
   - component: {fileID: 248212642}
+  - component: {fileID: 248212644}
   m_Layer: 5
   m_Name: WoodHeating
   m_TagString: Untagged
@@ -3504,7 +3587,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 248212640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &248212643
@@ -3561,9 +3644,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 248212644}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &248212644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248212640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1370660976}
 --- !u!1 &248435194
 GameObject:
   m_ObjectHideFlags: 0
@@ -3786,6 +3893,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 254513536}
+--- !u!114 &254971832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 817414989}
+  modifierDescription: externIsolation
+  moneyModifierSlider: {fileID: 1614800653}
+  ecoModifierSlider: {fileID: 995890910}
+  comfortModifierSlider: {fileID: 475638048}
 --- !u!1 &267176292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3905,6 +4028,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &273095053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 561541431}
+  modifierDescription: fuelWaterHeater
+  moneyModifierSlider: {fileID: 1187708133}
+  ecoModifierSlider: {fileID: 135388252}
+  comfortModifierSlider: {fileID: 1916643398}
 --- !u!1 &283436484
 GameObject:
   m_ObjectHideFlags: 0
@@ -4823,6 +4962,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 322091410}
+--- !u!114 &326792303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1649523170}
+  modifierDescription: electricOven
+  moneyModifierSlider: {fileID: 654525904}
+  ecoModifierSlider: {fileID: 2118444835}
+  comfortModifierSlider: {fileID: 369321149}
 --- !u!1 &335271794
 GameObject:
   m_ObjectHideFlags: 0
@@ -5159,6 +5314,7 @@ GameObject:
   - component: {fileID: 359772133}
   - component: {fileID: 359772134}
   - component: {fileID: 359772135}
+  - component: {fileID: 359772136}
   m_Layer: 5
   m_Name: LedLight
   m_TagString: Untagged
@@ -5241,6 +5397,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 359772136}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -5252,9 +5419,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 359772132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &359772136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359772132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 156692537}
 --- !u!1 &364779449
 GameObject:
   m_ObjectHideFlags: 0
@@ -5918,6 +6098,7 @@ GameObject:
   - component: {fileID: 411570819}
   - component: {fileID: 411570821}
   - component: {fileID: 411570820}
+  - component: {fileID: 411570822}
   m_Layer: 5
   m_Name: IncandescentLight
   m_TagString: Untagged
@@ -5954,7 +6135,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 411570818}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &411570821
@@ -6011,9 +6192,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 411570822}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &411570822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 411570818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 2129927278}
 --- !u!1 &426033976
 GameObject:
   m_ObjectHideFlags: 0
@@ -7027,6 +7232,7 @@ GameObject:
   - component: {fileID: 530361955}
   - component: {fileID: 530361956}
   - component: {fileID: 530361957}
+  - component: {fileID: 530361958}
   m_Layer: 5
   m_Name: HalogenLight
   m_TagString: Untagged
@@ -7109,6 +7315,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 530361958}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -7120,9 +7337,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 530361954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &530361958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 530361954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1769198010}
 --- !u!1 &535443038
 GameObject:
   m_ObjectHideFlags: 0
@@ -7373,6 +7603,7 @@ GameObject:
   - component: {fileID: 555085307}
   - component: {fileID: 555085308}
   - component: {fileID: 555085309}
+  - component: {fileID: 555085310}
   m_Layer: 5
   m_Name: MicroWaveOven
   m_TagString: Untagged
@@ -7455,6 +7686,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 555085310}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -7466,9 +7708,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 555085306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &555085310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 555085306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 68302554}
 --- !u!1 &558930805
 GameObject:
   m_ObjectHideFlags: 0
@@ -7528,7 +7783,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0.31666666
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!222 &558930808
@@ -7547,6 +7802,7 @@ GameObject:
   - component: {fileID: 561541430}
   - component: {fileID: 561541431}
   - component: {fileID: 561541432}
+  - component: {fileID: 561541433}
   m_Layer: 5
   m_Name: FuelWaterHeater
   m_TagString: Untagged
@@ -7629,6 +7885,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 561541433}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -7640,9 +7907,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 561541429}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &561541433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 561541429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 273095053}
 --- !u!1 &562309893
 GameObject:
   m_ObjectHideFlags: 0
@@ -8357,6 +8637,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &595109705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 793161098}
+  modifierDescription: gasCooker
+  moneyModifierSlider: {fileID: 1460245858}
+  ecoModifierSlider: {fileID: 511266079}
+  comfortModifierSlider: {fileID: 785109504}
 --- !u!1 &595658440
 GameObject:
   m_ObjectHideFlags: 0
@@ -9023,6 +9319,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &662054674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 52083352}
+  modifierDescription: internIsolation
+  moneyModifierSlider: {fileID: 1950317939}
+  ecoModifierSlider: {fileID: 78096223}
+  comfortModifierSlider: {fileID: 1349285208}
+--- !u!114 &675407601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1137251270}
+  modifierDescription: woodCooker
+  moneyModifierSlider: {fileID: 1774181487}
+  ecoModifierSlider: {fileID: 337958815}
+  comfortModifierSlider: {fileID: 408649151}
 --- !u!1 &683627336
 GameObject:
   m_ObjectHideFlags: 0
@@ -9068,6 +9396,7 @@ GameObject:
   - component: {fileID: 685337344}
   - component: {fileID: 685337343}
   - component: {fileID: 685337342}
+  - component: {fileID: 685337345}
   m_Layer: 5
   m_Name: DoubleIsolation
   m_TagString: Untagged
@@ -9104,7 +9433,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 685337340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!222 &685337343
@@ -9167,9 +9496,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 685337345}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &685337345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685337340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 790439796}
 --- !u!1 &686463387
 GameObject:
   m_ObjectHideFlags: 0
@@ -9546,6 +9899,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &717654506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 212866893}
+  modifierDescription: largeMultimedia
+  moneyModifierSlider: {fileID: 267176294}
+  ecoModifierSlider: {fileID: 574720402}
+  comfortModifierSlider: {fileID: 730361567}
 --- !u!1 &718020401
 GameObject:
   m_ObjectHideFlags: 0
@@ -10729,6 +11098,22 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &790439796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 685337344}
+  modifierDescription: doubleIsolation
+  moneyModifierSlider: {fileID: 1166492299}
+  ecoModifierSlider: {fileID: 1857664916}
+  comfortModifierSlider: {fileID: 1634115305}
 --- !u!1 &793161096
 GameObject:
   m_ObjectHideFlags: 0
@@ -10739,6 +11124,7 @@ GameObject:
   - component: {fileID: 793161097}
   - component: {fileID: 793161098}
   - component: {fileID: 793161099}
+  - component: {fileID: 793161100}
   m_Layer: 5
   m_Name: GasCooker
   m_TagString: Untagged
@@ -10821,6 +11207,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 793161100}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -10832,9 +11229,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 793161096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &793161100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793161096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 595109705}
 --- !u!1 &803714787
 GameObject:
   m_ObjectHideFlags: 0
@@ -11051,6 +11461,7 @@ GameObject:
   - component: {fileID: 817414988}
   - component: {fileID: 817414989}
   - component: {fileID: 817414990}
+  - component: {fileID: 817414991}
   m_Layer: 5
   m_Name: ExternIsolation
   m_TagString: Untagged
@@ -11133,6 +11544,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 817414991}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -11144,9 +11566,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 817414987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &817414991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817414987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 254971832}
 --- !u!1 &818195485
 GameObject:
   m_ObjectHideFlags: 0
@@ -14932,6 +15367,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1030746327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1121908748}
+  modifierDescription: electricCooker
+  moneyModifierSlider: {fileID: 1461751903}
+  ecoModifierSlider: {fileID: 1119663229}
+  comfortModifierSlider: {fileID: 1627586102}
 --- !u!1 &1032275946
 GameObject:
   m_ObjectHideFlags: 0
@@ -16335,6 +16786,7 @@ GameObject:
   - component: {fileID: 1121908746}
   - component: {fileID: 1121908748}
   - component: {fileID: 1121908747}
+  - component: {fileID: 1121908749}
   m_Layer: 5
   m_Name: ElectricCooker
   m_TagString: Untagged
@@ -16371,7 +16823,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1121908745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1121908748
@@ -16428,9 +16880,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1121908749}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &1121908749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1121908745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1030746327}
 --- !u!1 &1130569647
 GameObject:
   m_ObjectHideFlags: 0
@@ -16545,6 +17021,7 @@ GameObject:
   - component: {fileID: 1137251269}
   - component: {fileID: 1137251270}
   - component: {fileID: 1137251271}
+  - component: {fileID: 1137251272}
   m_Layer: 5
   m_Name: WoodCooker
   m_TagString: Untagged
@@ -16627,6 +17104,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1137251272}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -16638,9 +17126,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1137251268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1137251272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1137251268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 675407601}
 --- !u!1 &1138589361
 GameObject:
   m_ObjectHideFlags: 0
@@ -16855,6 +17356,7 @@ GameObject:
   - component: {fileID: 1160268414}
   - component: {fileID: 1160268415}
   - component: {fileID: 1160268416}
+  - component: {fileID: 1160268417}
   m_Layer: 5
   m_Name: PanelWaterHeater
   m_TagString: Untagged
@@ -16937,6 +17439,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1160268417}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -16948,9 +17461,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1160268413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1160268417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1160268413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1986242083}
 --- !u!1 &1166492297
 GameObject:
   m_ObjectHideFlags: 0
@@ -18155,6 +18681,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1256588848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1557322800}
+  modifierDescription: simpleMultimedia
+  moneyModifierSlider: {fileID: 1710108723}
+  ecoModifierSlider: {fileID: 1809616463}
+  comfortModifierSlider: {fileID: 27059604}
 --- !u!1 &1256685028
 GameObject:
   m_ObjectHideFlags: 0
@@ -19131,6 +19673,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1317928465}
+--- !u!114 &1322805488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1689913407}
+  modifierDescription: fuelHeating
+  moneyModifierSlider: {fileID: 1969287792}
+  ecoModifierSlider: {fileID: 1263203857}
+  comfortModifierSlider: {fileID: 300028631}
 --- !u!1 &1324841710
 GameObject:
   m_ObjectHideFlags: 0
@@ -19793,6 +20351,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1368924462}
+--- !u!114 &1370660976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 248212643}
+  modifierDescription: woodHeating
+  moneyModifierSlider: {fileID: 252281860}
+  ecoModifierSlider: {fileID: 1431388216}
+  comfortModifierSlider: {fileID: 82755674}
 --- !u!1 &1379167942
 GameObject:
   m_ObjectHideFlags: 0
@@ -19852,7 +20426,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0.6666667
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!222 &1379167945
@@ -19999,6 +20573,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1391239759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1882448528}
+  modifierDescription: woodWaterHeater
+  moneyModifierSlider: {fileID: 1081140550}
+  ecoModifierSlider: {fileID: 1082676770}
+  comfortModifierSlider: {fileID: 1346917651}
 --- !u!1 &1394872883
 GameObject:
   m_ObjectHideFlags: 0
@@ -20693,6 +21283,7 @@ GameObject:
   - component: {fileID: 1424267176}
   - component: {fileID: 1424267177}
   - component: {fileID: 1424267178}
+  - component: {fileID: 1424267179}
   m_Layer: 5
   m_Name: MediumMultimedia
   m_TagString: Untagged
@@ -20775,6 +21366,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1424267179}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -20786,9 +21388,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1424267175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1424267179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424267175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1947199408}
 --- !u!1 &1431388214
 GameObject:
   m_ObjectHideFlags: 0
@@ -22609,6 +23224,7 @@ GameObject:
   - component: {fileID: 1557322799}
   - component: {fileID: 1557322800}
   - component: {fileID: 1557322801}
+  - component: {fileID: 1557322802}
   m_Layer: 5
   m_Name: SimpleMultimedia
   m_TagString: Untagged
@@ -22691,6 +23307,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1557322802}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -22702,9 +23329,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1557322798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1557322802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1557322798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1256588848}
 --- !u!1 &1569589655
 GameObject:
   m_ObjectHideFlags: 0
@@ -23291,6 +23931,7 @@ GameObject:
   - component: {fileID: 1608628242}
   - component: {fileID: 1608628243}
   - component: {fileID: 1608628244}
+  - component: {fileID: 1608628245}
   m_Layer: 5
   m_Name: HeatPumpHeating
   m_TagString: Untagged
@@ -23373,6 +24014,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1608628245}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -23384,9 +24036,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1608628241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1608628245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608628241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1727762131}
 --- !u!1 &1614800651
 GameObject:
   m_ObjectHideFlags: 0
@@ -23847,6 +24512,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1638358247}
+--- !u!114 &1641265121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 2001892587}
+  modifierDescription: woodOven
+  moneyModifierSlider: {fileID: 2011883037}
+  ecoModifierSlider: {fileID: 1950984405}
+  comfortModifierSlider: {fileID: 755222802}
 --- !u!1 &1649523167
 GameObject:
   m_ObjectHideFlags: 0
@@ -23857,6 +24538,7 @@ GameObject:
   - component: {fileID: 1649523168}
   - component: {fileID: 1649523170}
   - component: {fileID: 1649523169}
+  - component: {fileID: 1649523171}
   m_Layer: 5
   m_Name: ElectricOven
   m_TagString: Untagged
@@ -23893,7 +24575,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1649523167}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1649523170
@@ -23950,9 +24632,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1649523171}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &1649523171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1649523167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 326792303}
 --- !u!1 &1652758610
 GameObject:
   m_ObjectHideFlags: 0
@@ -24525,6 +25231,7 @@ GameObject:
   - component: {fileID: 1689913406}
   - component: {fileID: 1689913407}
   - component: {fileID: 1689913408}
+  - component: {fileID: 1689913409}
   m_Layer: 5
   m_Name: FuelHeating
   m_TagString: Untagged
@@ -24607,6 +25314,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1689913409}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -24618,9 +25336,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1689913405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1689913409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1689913405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1322805488}
 --- !u!1 &1693897716
 GameObject:
   m_ObjectHideFlags: 0
@@ -25123,6 +25854,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1727762131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1608628243}
+  modifierDescription: heatPumpHeating
+  moneyModifierSlider: {fileID: 1974603423}
+  ecoModifierSlider: {fileID: 645588954}
+  comfortModifierSlider: {fileID: 1467714430}
 --- !u!1 &1728216941
 GameObject:
   m_ObjectHideFlags: 0
@@ -25573,6 +26320,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1769198010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 530361956}
+  modifierDescription: halogenLight
+  moneyModifierSlider: {fileID: 1671919906}
+  ecoModifierSlider: {fileID: 1522691425}
+  comfortModifierSlider: {fileID: 1238428715}
 --- !u!1 &1769623097
 GameObject:
   m_ObjectHideFlags: 0
@@ -27649,6 +28412,7 @@ GameObject:
   - component: {fileID: 1882448526}
   - component: {fileID: 1882448528}
   - component: {fileID: 1882448527}
+  - component: {fileID: 1882448529}
   m_Layer: 5
   m_Name: WoodWaterHeater
   m_TagString: Untagged
@@ -27685,7 +28449,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1882448525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1882448528
@@ -27742,9 +28506,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1882448529}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &1882448529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882448525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1391239759}
 --- !u!1 &1889823391
 GameObject:
   m_ObjectHideFlags: 0
@@ -28547,6 +29335,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1947152162}
+--- !u!114 &1947199408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1424267177}
+  modifierDescription: mediumMultimedia
+  moneyModifierSlider: {fileID: 1652758612}
+  ecoModifierSlider: {fileID: 189944221}
+  comfortModifierSlider: {fileID: 1787430133}
 --- !u!1 &1949510495
 GameObject:
   m_ObjectHideFlags: 0
@@ -29600,6 +30404,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1984089955}
+--- !u!114 &1986242083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1160268415}
+  modifierDescription: panelWaterHeater
+  moneyModifierSlider: {fileID: 207549078}
+  ecoModifierSlider: {fileID: 728760109}
+  comfortModifierSlider: {fileID: 2011949363}
 --- !u!1 &1989267028
 GameObject:
   m_ObjectHideFlags: 0
@@ -29678,6 +30498,7 @@ GameObject:
   - component: {fileID: 2001892586}
   - component: {fileID: 2001892587}
   - component: {fileID: 2001892588}
+  - component: {fileID: 2001892589}
   m_Layer: 5
   m_Name: WoodOven
   m_TagString: Untagged
@@ -29760,6 +30581,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2001892589}
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -29771,9 +30603,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2001892585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf021debffaded428f289e8a305593d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5586c14757cf18489cc57c26660b005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2001892589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2001892585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1641265121}
 --- !u!1 &2002054313
 GameObject:
   m_ObjectHideFlags: 0
@@ -31300,6 +32145,22 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &2129927278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 411570821}
+  modifierDescription: incandescentLight
+  moneyModifierSlider: {fileID: 1949510497}
+  ecoModifierSlider: {fileID: 2071446585}
+  comfortModifierSlider: {fileID: 570252319}
 --- !u!1 &2140341231
 GameObject:
   m_ObjectHideFlags: 0

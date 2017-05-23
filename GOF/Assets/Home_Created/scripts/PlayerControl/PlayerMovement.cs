@@ -29,8 +29,11 @@ public class PlayerMovement : MonoBehaviour
 
 	public const string startingPositionKey = "starting position";
 
+	public BarModifier barModifier; 
+
 	private void Start()
 	{
+		barModifier = FindObjectOfType<BarModifier>();
 		agent.updateRotation = false; //we'll do that ourselves
 
 		inputHoldWait = new WaitForSeconds (inputHoldDelay);
@@ -104,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
 			return;
 		}
 
+		barModifier.clear ();
 		currentInteractable = null;
 
 		PointerEventData pData = (PointerEventData)data;

@@ -5889,6 +5889,62 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011044878518, guid: 458d9a11c49483c45b95e494d0136e0e,
     type: 2}
   m_PrefabInternal: {fileID: 784821340}
+--- !u!1 &788129827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 788129830}
+  - component: {fileID: 788129829}
+  - component: {fileID: 788129828}
+  m_Layer: 0
+  m_Name: LevelTimer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &788129828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 788129827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 947362936}
+--- !u!114 &788129829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 788129827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365f692b7ef5b854bb33bfbfac49f25b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTime: 30
+  targetReactionCollection: {fileID: 788129828}
+--- !u!4 &788129830
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 788129827}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 934.1805, y: 772.4893, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &806466928
 GameObject:
   m_ObjectHideFlags: 0
@@ -7126,6 +7182,20 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011044878518, guid: 458d9a11c49483c45b95e494d0136e0e,
     type: 2}
   m_PrefabInternal: {fileID: 941987846}
+--- !u!114 &947362936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47b088a86708e049be2af52f7e7c204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: MainMenu
+  startingPointInLoadedScene: StartingPoint
+  playerSaveData: {fileID: 11400000, guid: b622814b449dbef46a8e2dc95c069c71, type: 2}
 --- !u!1001 &965437455
 Prefab:
   m_ObjectHideFlags: 0
@@ -7276,6 +7346,22 @@ MonoBehaviour:
   message: You have a microwave oven
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 5
+--- !u!114 &996993490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bdd75c5aab6664f9ab4cf7c35500f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 0}
+  modifierDescription: 
+  moneyModifierSlider: {fileID: 0}
+  ecoModifierSlider: {fileID: 0}
+  comfortModifierSlider: {fileID: 0}
 --- !u!1001 &1030717462
 Prefab:
   m_ObjectHideFlags: 0
@@ -8172,7 +8258,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -8215,6 +8301,11 @@ Prefab:
       propertyPath: m_Name
       value: WoodCookerReaction
       objectReference: {fileID: 0}
+    - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
+        type: 2}
+      propertyPath: reactions.Array.data[1]
+      value: 
+      objectReference: {fileID: 996993490}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
   m_IsPrefabParent: 0

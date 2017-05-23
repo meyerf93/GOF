@@ -20,28 +20,19 @@ public class ChangeImageOnClick : MonoBehaviour {
         displayImage.sprite = Resources.Load<Sprite>("Images/6") as Sprite;
     }
 	
+	
+
     public void BtnNext () {
         if (i + 1 < gallery.Length)
         {
             i++;
         }
-        else {//i=0
-            i = 0;
-        }
     }
 
     public void BtnPrev () {
-        if (i - 1 > 0)
-        {
+        if (i - 1 >= 0){
             i--;
         }
-        else if (i - 1 == 0) {
-            i = 0;
-        }
-        else if (i - 1 < 0) {
-            i = gallery.Length;
-            i--;
-        }       
     }
 
     // Update is called once per frame
