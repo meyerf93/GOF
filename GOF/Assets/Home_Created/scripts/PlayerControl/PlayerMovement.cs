@@ -107,7 +107,10 @@ public class PlayerMovement : MonoBehaviour
 			return;
 		}
 
-		barModifier.clear ();
+		foreach (Modifier modifier in barModifier.modifiers) 
+		{
+			modifier.desactivate ();
+		}
 		currentInteractable = null;
 
 		PointerEventData pData = (PointerEventData)data;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class BarModifier : MonoBehaviour 
 {
-	List<Modifier> modifiers = new List<Modifier>();
+	public List<Modifier> modifiers = new List<Modifier>();
 
 	public int moneyDefaultModifier;
 	public int ecoDefaultModifier;
@@ -42,7 +42,11 @@ public class BarModifier : MonoBehaviour
 
 		foreach (Modifier modifier in modifiers) 
 		{
-			value += modifier.moneyValue;
+			if (modifier.activated) 
+			{
+				value += modifier.moneyValue;
+			}
+
 		}
 		return value;
 	}
@@ -52,7 +56,10 @@ public class BarModifier : MonoBehaviour
 
 		foreach (Modifier modifier in modifiers) 
 		{
-			value += modifier.ecoValue;
+			if (modifier.activated) 
+			{
+				value += modifier.ecoValue;
+			}
 		}
 		return value;
 	}
@@ -62,7 +69,10 @@ public class BarModifier : MonoBehaviour
 
 		foreach (Modifier modifier in modifiers) 
 		{
-			value += modifier.comfortValue;
+			if (modifier.activated) 
+			{
+				value += modifier.comfortValue;
+			}
 		}
 		return value;
 	}
