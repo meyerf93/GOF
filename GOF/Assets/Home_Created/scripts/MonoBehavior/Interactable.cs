@@ -12,8 +12,7 @@ public class Interactable : MonoBehaviour {
 	{
 		for (int i = 0; i < conditionCollections.Length; i++)
 		{
-			if (conditionCollections[i].CheckAndReact ())
-				return;
+			conditionCollections [i].CheckAndReact ();
 		}
 		defaultReactionCollection.React ();
 	}

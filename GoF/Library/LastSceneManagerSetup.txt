@@ -3,7 +3,7 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
 - path: Assets/Scenes/MainMenu.unity
-  isLoaded: 1
+  isLoaded: 0
   isActive: 0
 - path: Assets/Scenes/Persistent.unity
   isLoaded: 1

@@ -160,7 +160,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: externIsolation
-  barModifier: {fileID: 0}
 --- !u!1001 &9668944
 Prefab:
   m_ObjectHideFlags: 0
@@ -260,7 +259,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: woodWaterHeater
-  barModifier: {fileID: 0}
 --- !u!114 &26234468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2038,7 +2036,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: halogenLight
-  barModifier: {fileID: 0}
 --- !u!1 &222369596
 GameObject:
   m_ObjectHideFlags: 0
@@ -5091,7 +5088,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: fuelHeating
-  barModifier: {fileID: 0}
 --- !u!1001 &607180514
 Prefab:
   m_ObjectHideFlags: 0
@@ -5723,7 +5719,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: fuelWaterHeater
-  barModifier: {fileID: 0}
 --- !u!114 &658718389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6274,8 +6269,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7633895}
-  - {fileID: 1274243570}
   - {fileID: 1404499018}
+  - {fileID: 1274243570}
   - {fileID: 648004668}
   - {fileID: 1024503238}
   - {fileID: 624753940}
@@ -6785,7 +6780,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: doubleIsolation
-  barModifier: {fileID: 0}
 --- !u!1001 &784821340
 Prefab:
   m_ObjectHideFlags: 0
@@ -6903,7 +6897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365f692b7ef5b854bb33bfbfac49f25b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTime: 30
+  targetTime: 90
   targetReactionCollection: {fileID: 788129828}
 --- !u!4 &788129830
 Transform:
@@ -7559,7 +7553,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: electricCooker
-  barModifier: {fileID: 0}
 --- !u!1001 &893833201
 Prefab:
   m_ObjectHideFlags: 0
@@ -8348,7 +8341,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: woodCooker
-  barModifier: {fileID: 0}
 --- !u!1 &978342692
 GameObject:
   m_ObjectHideFlags: 0
@@ -9238,7 +9230,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: woodHeating
-  barModifier: {fileID: 0}
 --- !u!1 &1127703619
 GameObject:
   m_ObjectHideFlags: 0
@@ -9532,7 +9523,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: incandescentLight
-  barModifier: {fileID: 0}
 --- !u!1001 &1151722787
 Prefab:
   m_ObjectHideFlags: 0
@@ -9840,7 +9830,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: ledLight
-  barModifier: {fileID: 0}
 --- !u!114 &1202185154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10426,7 +10415,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 740045840}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1285186084
 Prefab:
@@ -11068,7 +11057,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 740045840}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1406025306
 MonoBehaviour:
@@ -11083,7 +11072,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: electricOven
-  barModifier: {fileID: 0}
 --- !u!114 &1413396497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11097,7 +11085,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: woodOven
-  barModifier: {fileID: 0}
 --- !u!114 &1415097811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11235,7 +11222,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: internIsolation
-  barModifier: {fileID: 0}
 --- !u!114 &1442284643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11569,7 +11555,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: mediumMultimedia
-  barModifier: {fileID: 0}
 --- !u!1001 &1494096150
 Prefab:
   m_ObjectHideFlags: 0
@@ -12292,7 +12277,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: panelWaterHeater
-  barModifier: {fileID: 0}
 --- !u!1001 &1634870037
 Prefab:
   m_ObjectHideFlags: 0
@@ -13128,7 +13112,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: microWaveOven
-  barModifier: {fileID: 0}
 --- !u!114 &1739474211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14144,7 +14127,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: simpleMultimedia
-  barModifier: {fileID: 0}
 --- !u!1001 &1844683560
 Prefab:
   m_ObjectHideFlags: 0
@@ -14296,7 +14278,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: largeMultimedia
-  barModifier: {fileID: 0}
 --- !u!114 &1868962967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15533,7 +15514,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: gasCooker
-  barModifier: {fileID: 0}
 --- !u!1 &2027049113
 GameObject:
   m_ObjectHideFlags: 0
@@ -16013,7 +15993,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: heatPumpHeating
-  barModifier: {fileID: 0}
 --- !u!4 &2074359441 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011044878518, guid: 458d9a11c49483c45b95e494d0136e0e,

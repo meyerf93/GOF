@@ -133,6 +133,12 @@ public class PlayerMovement : MonoBehaviour
 		{
 			return;
 		}
+
+		foreach (Modifier modifier in barModifier.modifiers) 
+		{
+			modifier.desactivate ();
+		}
+
 		currentInteractable = interactable;
 		destinationPosition = currentInteractable.interactionLocation.position;
 

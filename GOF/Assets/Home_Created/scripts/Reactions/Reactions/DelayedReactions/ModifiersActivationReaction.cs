@@ -5,7 +5,7 @@ using UnityEngine;
 public class ModifiersActivationReaction : DelayedReaction {
 
 	public string modifierName;
-	public BarModifier barModifier;
+	private BarModifier barModifier;
 
 	protected override void SpecificInit()
 	{
