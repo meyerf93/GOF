@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 8
+  serializedVersion: 7
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -25,7 +25,6 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -42,7 +41,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 7
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -54,7 +53,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 8
+    serializedVersion: 4
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -67,28 +66,14 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 0
     m_TextureCompression: 1
+    m_DirectLightInLightProbes: 1
     m_FinalGather: 0
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-    m_MixedBakeMode: 1
-    m_BakeBackend: 0
-    m_PVRSampling: 1
-    m_PVRDirectSampleCount: 32
-    m_PVRSampleCount: 500
-    m_PVRBounces: 2
-    m_PVRFiltering: 0
-    m_PVRFilteringMode: 1
-    m_PVRCulling: 1
-    m_PVRFilteringGaussRadiusDirect: 1
-    m_PVRFilteringGaussRadiusIndirect: 5
-    m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 112000001, guid: b9c9699ecd2ffa440ac58934720b093a,
     type: 2}
-  m_ShadowMaskMode: 2
+  m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -105,8 +90,6 @@ NavMeshSettings:
     minRegionArea: 2
     manualCellSize: 0
     cellSize: 0.16666667
-    manualTileSize: 0
-    tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &18798592
@@ -125,7 +108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &18798593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -467,7 +450,7 @@ Canvas:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 313547315}
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -476,7 +459,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -511,6 +493,9 @@ GameObject:
   - component: {fileID: 326792305}
   - component: {fileID: 326792304}
   - component: {fileID: 326792306}
+  - component: {fileID: 326792309}
+  - component: {fileID: 326792308}
+  - component: {fileID: 326792307}
   m_Layer: 0
   m_Name: BarsModifier
   m_TagString: Untagged
@@ -529,9 +514,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 210cfd34edc3eb24cb207896ec244bda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyDefaultModifier: -10
-  ecoDefaultModifier: -10
-  comfortDefaultModifier: -10
+  moneyDefaultModifier: 0
+  ecoDefaultModifier: -5
+  comfortDefaultModifier: -5
 --- !u!4 &326792305
 Transform:
   m_ObjectHideFlags: 0
@@ -557,7 +542,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barModifier: {fileID: 326792304}
+  moneyController: {fileID: 326792308}
+  ecoController: {fileID: 326792309}
+  confortController: {fileID: 326792307}
   text: {fileID: 1344022574}
+--- !u!114 &326792307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 326792303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7888c2ac6a2ad45863e6e04d3ccb21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barModifier: {fileID: 326792304}
+  MAX: 1000
+--- !u!114 &326792308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 326792303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c69f6b63dc454d148a3dfdf9edba1f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barModifier: {fileID: 326792304}
+  MAX: 1000
+--- !u!114 &326792309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 326792303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d476e9642a43a4d96795b51146354c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barModifier: {fileID: 326792304}
+  MAX: 1000
 --- !u!1 &353158844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,18 +1301,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 15
-    m_FontStyle: 1
+    m_FontSize: 13
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 
 --- !u!222 &1344022575
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1300,15 +1327,15 @@ RectTransform:
   m_GameObject: {fileID: 1344022573}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4014, y: 6.29689, z: 2.401401}
+  m_LocalScale: {x: 2.7458544, y: 5.760183, z: 2.1967208}
   m_Children: []
   m_Father: {fileID: 313547321}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.48100004, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -642, y: 388}
-  m_SizeDelta: {x: 187, y: 97}
+  m_AnchoredPosition: {x: 152, y: -519.66}
+  m_SizeDelta: {x: 216, y: 69.561}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1345012791 stripped
 RectTransform:
@@ -1873,8 +1900,6 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
-  m_AllowMSAA: 1
-  m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
