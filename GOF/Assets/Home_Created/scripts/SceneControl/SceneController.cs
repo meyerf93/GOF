@@ -26,6 +26,8 @@ public class SceneController : MonoBehaviour
     
     private bool isFading;                          // Flag used to determine if the Image is currently fading to or from black.
 
+	public Camera mainCamera;
+	private CameraConfig cameraConfig;
 
     private IEnumerator Start ()
     {
@@ -77,6 +79,7 @@ public class SceneController : MonoBehaviour
         
         // Start fading back in and wait for it to finish before exiting the function.
         yield return StartCoroutine (Fade (0f));
+
     }
 
 
@@ -90,6 +93,9 @@ public class SceneController : MonoBehaviour
 
         // Set the newly loaded scene as the active scene (this marks it as the one to be unloaded next).
         SceneManager.SetActiveScene (newlyLoadedScene);
+		cameraConfig = FindObjectOfType<CameraConfig> ();
+		loadCameraConfig (cameraConfig);
+
     }
 
 
@@ -121,4 +127,9 @@ public class SceneController : MonoBehaviour
         // Stop the CanvasGroup from blocking raycasts so input is no longer ignored.
         faderCanvasGroup.blocksRaycasts = false;
     }
+	public void loadCameraConfig(CameraConfig config)
+	{
+		mainCamera.transform.position = config.transform.position;
+		mainCamera.transform.rotation = config.transform.rotation;
+	}
 }

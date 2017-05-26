@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
 	public const string startingPositionKey = "starting position";
 
-	public BarModifier barModifier; 
+	private BarModifier barModifier; 
 
 	private void Start()
 	{

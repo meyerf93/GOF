@@ -2,3 +2,12 @@ sceneSetups:
 - path: Assets/Scenes/Persistent.unity
   isLoaded: 1
   isActive: 1
+- path: Assets/Scenes/First_level.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Scenes/MainMenu.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Scenes/shop_scene.unity
+  isLoaded: 0
+  isActive: 0
