@@ -20,4 +20,16 @@ public class MoneyController : MonoBehaviour {
 	{
 		value = value + time*barModifier.getMoneyModifier ();
 	}
+
+	public bool buyShopObject(int prize)
+	{
+		if ((value - prize) < 0) 
+		{
+			return false;
+		} else 
+		{
+			value -= prize;
+			return true;
+		}
+	}
 }
