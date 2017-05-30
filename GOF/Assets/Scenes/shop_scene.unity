@@ -170,8 +170,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 200
-  toggle: {fileID: 0}
+  objectPrize: 1000
+  toggle: {fileID: 1608628243}
+  shopConditionsManager: {fileID: 1608628244}
+  linkedCondition: {fileID: 114117292589539374, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &10801051
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,6 +952,7 @@ GameObject:
   - component: {fileID: 52083352}
   - component: {fileID: 52083353}
   - component: {fileID: 52083354}
+  - component: {fileID: 52083355}
   m_Layer: 5
   m_Name: InternIsolation
   m_TagString: Untagged
@@ -1019,18 +1023,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 52083353}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114270425875126340, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 52083354}
         m_MethodName: React
         m_Mode: 1
@@ -1103,6 +1095,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 662054674}
   - {fileID: 1105838445}
+--- !u!114 &52083355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 52083350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 52083352}
+  condition: {fileID: 114270425875126340, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &58967800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3244,8 +3250,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 100
-  toggle: {fileID: 0}
+  objectPrize: 500
+  toggle: {fileID: 1137251270}
+  shopConditionsManager: {fileID: 1137251271}
+  linkedCondition: {fileID: 114279642283691070, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &189944219
 GameObject:
   m_ObjectHideFlags: 0
@@ -3640,6 +3649,7 @@ GameObject:
   - component: {fileID: 212866893}
   - component: {fileID: 212866892}
   - component: {fileID: 212866894}
+  - component: {fileID: 212866895}
   m_Layer: 5
   m_Name: LargeMultimedia
   m_TagString: Untagged
@@ -3721,17 +3731,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 212866894}
-        m_MethodName: React
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 212866892}
         m_MethodName: onPurchase
         m_Mode: 2
@@ -3794,6 +3793,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 717654506}
   - {fileID: 1456432864}
+--- !u!114 &212866895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 212866890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 212866893}
+  condition: {fileID: 114996930909448140, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &233295054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3975,6 +3988,7 @@ GameObject:
   - component: {fileID: 248212643}
   - component: {fileID: 248212642}
   - component: {fileID: 248212644}
+  - component: {fileID: 248212645}
   m_Layer: 5
   m_Name: WoodHeating
   m_TagString: Untagged
@@ -4056,18 +4070,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 248212642}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114430205281736696, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 248212644}
         m_MethodName: React
         m_Mode: 1
@@ -4129,6 +4131,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 1370660976}
   - {fileID: 1752457741}
+--- !u!114 &248212645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248212640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 248212643}
+  condition: {fileID: 114430205281736696, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &248435194
 GameObject:
   m_ObjectHideFlags: 0
@@ -6033,6 +6049,7 @@ GameObject:
   - component: {fileID: 359772134}
   - component: {fileID: 359772135}
   - component: {fileID: 359772136}
+  - component: {fileID: 359772137}
   m_Layer: 5
   m_Name: LedLight
   m_TagString: Untagged
@@ -6103,18 +6120,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 359772135}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114959788283693394, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 359772136}
         m_MethodName: React
         m_Mode: 1
@@ -6187,6 +6192,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 156692537}
   - {fileID: 1271427202}
+--- !u!114 &359772137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359772132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 359772134}
+  condition: {fileID: 114959788283693394, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &364779449
 GameObject:
   m_ObjectHideFlags: 0
@@ -6961,6 +6980,7 @@ GameObject:
   - component: {fileID: 411570821}
   - component: {fileID: 411570820}
   - component: {fileID: 411570822}
+  - component: {fileID: 411570823}
   m_Layer: 5
   m_Name: IncandescentLight
   m_TagString: Untagged
@@ -7042,18 +7062,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 411570820}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114406084487780956, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 411570822}
         m_MethodName: React
         m_Mode: 1
@@ -7115,6 +7123,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 2129927278}
   - {fileID: 2031192481}
+--- !u!114 &411570823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 411570818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 411570821}
+  condition: {fileID: 114406084487780956, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &426033976
 GameObject:
   m_ObjectHideFlags: 0
@@ -7845,8 +7867,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 200
-  toggle: {fileID: 0}
+  objectPrize: 1000
+  toggle: {fileID: 793161098}
+  shopConditionsManager: {fileID: 793161099}
+  linkedCondition: {fileID: 114785595945802816, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &493346566
 GameObject:
   m_ObjectHideFlags: 0
@@ -7930,7 +7955,7 @@ MonoBehaviour:
   m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &503578820
 GameObject:
   m_ObjectHideFlags: 0
@@ -8252,6 +8277,7 @@ GameObject:
   - component: {fileID: 530361956}
   - component: {fileID: 530361957}
   - component: {fileID: 530361958}
+  - component: {fileID: 530361959}
   m_Layer: 5
   m_Name: HalogenLight
   m_TagString: Untagged
@@ -8322,18 +8348,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 530361957}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114669506197589680, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 530361958}
         m_MethodName: React
         m_Mode: 1
@@ -8406,6 +8420,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 1769198010}
   - {fileID: 1026868038}
+--- !u!114 &530361959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 530361954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 530361956}
+  condition: {fileID: 114669506197589680, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &535443038
 GameObject:
   m_ObjectHideFlags: 0
@@ -8657,6 +8685,7 @@ GameObject:
   - component: {fileID: 555085308}
   - component: {fileID: 555085309}
   - component: {fileID: 555085310}
+  - component: {fileID: 555085311}
   m_Layer: 5
   m_Name: MicroWaveOven
   m_TagString: Untagged
@@ -8727,18 +8756,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 555085309}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114674272567270672, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 555085310}
         m_MethodName: React
         m_Mode: 1
@@ -8811,6 +8828,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 68302554}
   - {fileID: 818537008}
+--- !u!114 &555085311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 555085306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 555085308}
+  condition: {fileID: 114674272567270672, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &558930805
 GameObject:
   m_ObjectHideFlags: 0
@@ -8890,6 +8921,7 @@ GameObject:
   - component: {fileID: 561541431}
   - component: {fileID: 561541432}
   - component: {fileID: 561541433}
+  - component: {fileID: 561541434}
   m_Layer: 5
   m_Name: FuelWaterHeater
   m_TagString: Untagged
@@ -8960,18 +8992,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 561541432}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114886392136716610, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 561541433}
         m_MethodName: React
         m_Mode: 1
@@ -9044,6 +9064,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 273095053}
   - {fileID: 1048344945}
+--- !u!114 &561541434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 561541429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 561541431}
+  condition: {fileID: 114886392136716610, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &562309893
 GameObject:
   m_ObjectHideFlags: 0
@@ -9879,8 +9913,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 200
-  toggle: {fileID: 0}
+  objectPrize: 1000
+  toggle: {fileID: 1424267177}
+  shopConditionsManager: {fileID: 1424267178}
+  linkedCondition: {fileID: 114359895970179428, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!114 &595109705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10751,6 +10788,7 @@ GameObject:
   - component: {fileID: 685337343}
   - component: {fileID: 685337342}
   - component: {fileID: 685337345}
+  - component: {fileID: 685337346}
   m_Layer: 5
   m_Name: DoubleIsolation
   m_TagString: Untagged
@@ -10838,18 +10876,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 685337342}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114315027674158940, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 685337345}
         m_MethodName: React
         m_Mode: 1
@@ -10911,6 +10937,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 790439796}
   - {fileID: 1899214912}
+--- !u!114 &685337346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685337340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 685337344}
+  condition: {fileID: 114315027674158940, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &686463387
 GameObject:
   m_ObjectHideFlags: 0
@@ -11160,8 +11200,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 200
+  objectPrize: 1000
   toggle: {fileID: 817414989}
+  shopConditionsManager: {fileID: 817414990}
+  linkedCondition: {fileID: 114464465273519874, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &704628204
 GameObject:
   m_ObjectHideFlags: 0
@@ -11395,8 +11438,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 100
-  toggle: {fileID: 0}
+  objectPrize: 500
+  toggle: {fileID: 1557322800}
+  shopConditionsManager: {fileID: 1557322801}
+  linkedCondition: {fileID: 114067828586161860, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &723737429
 GameObject:
   m_ObjectHideFlags: 0
@@ -12034,7 +12080,7 @@ MonoBehaviour:
   m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &755222800
 GameObject:
   m_ObjectHideFlags: 0
@@ -12759,6 +12805,7 @@ GameObject:
   - component: {fileID: 793161098}
   - component: {fileID: 793161099}
   - component: {fileID: 793161100}
+  - component: {fileID: 793161101}
   m_Layer: 5
   m_Name: GasCooker
   m_TagString: Untagged
@@ -12829,18 +12876,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793161099}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114785595945802816, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 793161100}
         m_MethodName: React
         m_Mode: 1
@@ -12913,6 +12948,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 595109705}
   - {fileID: 490916290}
+--- !u!114 &793161101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793161096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 793161098}
+  condition: {fileID: 114785595945802816, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &803714787
 GameObject:
   m_ObjectHideFlags: 0
@@ -12992,8 +13041,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 300
-  toggle: {fileID: 0}
+  objectPrize: 1500
+  toggle: {fileID: 1121908748}
+  shopConditionsManager: {fileID: 1121908747}
+  linkedCondition: {fileID: 114007220300094258, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &812202844
 GameObject:
   m_ObjectHideFlags: 0
@@ -13143,6 +13195,7 @@ GameObject:
   - component: {fileID: 817414989}
   - component: {fileID: 817414990}
   - component: {fileID: 817414991}
+  - component: {fileID: 817414992}
   m_Layer: 5
   m_Name: ExternIsolation
   m_TagString: Untagged
@@ -13213,18 +13266,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 817414990}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114464465273519874, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 817414991}
         m_MethodName: React
         m_Mode: 1
@@ -13297,6 +13338,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 254971832}
   - {fileID: 703254151}
+--- !u!114 &817414992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817414987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 817414989}
+  condition: {fileID: 114464465273519874, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &818195485
 GameObject:
   m_ObjectHideFlags: 0
@@ -13384,8 +13439,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 100
+  objectPrize: 500
   toggle: {fileID: 555085308}
+  shopConditionsManager: {fileID: 555085309}
+  linkedCondition: {fileID: 114674272567270672, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &822118798
 GameObject:
   m_ObjectHideFlags: 0
@@ -14388,8 +14446,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 300
-  toggle: {fileID: 0}
+  objectPrize: 1500
+  toggle: {fileID: 1882448528}
+  shopConditionsManager: {fileID: 1882448527}
+  linkedCondition: {fileID: 114530615477572274, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &880775061
 GameObject:
   m_ObjectHideFlags: 0
@@ -14681,8 +14742,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 300
+  objectPrize: 1500
   toggle: {fileID: 1649523170}
+  shopConditionsManager: {fileID: 1649523169}
+  linkedCondition: {fileID: 114851245668720206, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &905020817
 GameObject:
   m_ObjectHideFlags: 0
@@ -14728,8 +14792,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 100
-  toggle: {fileID: 0}
+  objectPrize: 500
+  toggle: {fileID: 1160268415}
+  shopConditionsManager: {fileID: 1160268416}
+  linkedCondition: {fileID: 114799340083980716, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &911669681
 GameObject:
   m_ObjectHideFlags: 0
@@ -17255,8 +17322,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 100
-  toggle: {fileID: 0}
+  objectPrize: 500
+  toggle: {fileID: 530361956}
+  shopConditionsManager: {fileID: 530361957}
+  linkedCondition: {fileID: 114669506197589680, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!114 &1030746327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17494,8 +17564,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 200
-  toggle: {fileID: 0}
+  objectPrize: 1000
+  toggle: {fileID: 561541431}
+  shopConditionsManager: {fileID: 561541432}
+  linkedCondition: {fileID: 114886392136716610, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1048423775
 GameObject:
   m_ObjectHideFlags: 0
@@ -17825,7 +17898,7 @@ MonoBehaviour:
   m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &1066724662
 GameObject:
   m_ObjectHideFlags: 0
@@ -18563,8 +18636,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 100
+  objectPrize: 500
   toggle: {fileID: 52083352}
+  shopConditionsManager: {fileID: 52083353}
+  linkedCondition: {fileID: 114270425875126340, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1111915788
 GameObject:
   m_ObjectHideFlags: 0
@@ -18682,7 +18758,7 @@ MonoBehaviour:
   m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &1116087051
 GameObject:
   m_ObjectHideFlags: 0
@@ -18868,6 +18944,7 @@ GameObject:
   - component: {fileID: 1121908748}
   - component: {fileID: 1121908747}
   - component: {fileID: 1121908749}
+  - component: {fileID: 1121908750}
   m_Layer: 5
   m_Name: ElectricCooker
   m_TagString: Untagged
@@ -18949,18 +19026,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1121908747}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114007220300094258, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1121908749}
         m_MethodName: React
         m_Mode: 1
@@ -19022,6 +19087,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 1030746327}
   - {fileID: 806834502}
+--- !u!114 &1121908750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1121908745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1121908748}
+  condition: {fileID: 114007220300094258, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1130569647
 GameObject:
   m_ObjectHideFlags: 0
@@ -19137,6 +19216,7 @@ GameObject:
   - component: {fileID: 1137251270}
   - component: {fileID: 1137251271}
   - component: {fileID: 1137251272}
+  - component: {fileID: 1137251273}
   m_Layer: 5
   m_Name: WoodCooker
   m_TagString: Untagged
@@ -19207,18 +19287,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1137251271}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114279642283691070, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1137251272}
         m_MethodName: React
         m_Mode: 1
@@ -19291,6 +19359,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 675407601}
   - {fileID: 188407066}
+--- !u!114 &1137251273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1137251268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1137251270}
+  condition: {fileID: 114279642283691070, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1138589361
 GameObject:
   m_ObjectHideFlags: 0
@@ -19506,6 +19588,7 @@ GameObject:
   - component: {fileID: 1160268415}
   - component: {fileID: 1160268416}
   - component: {fileID: 1160268417}
+  - component: {fileID: 1160268418}
   m_Layer: 5
   m_Name: PanelWaterHeater
   m_TagString: Untagged
@@ -19576,18 +19659,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1160268416}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114799340083980716, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1160268417}
         m_MethodName: React
         m_Mode: 1
@@ -19660,6 +19731,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 1986242083}
   - {fileID: 905685925}
+--- !u!114 &1160268418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1160268413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1160268415}
+  condition: {fileID: 114799340083980716, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1166492297
 GameObject:
   m_ObjectHideFlags: 0
@@ -21421,8 +21506,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 200
-  toggle: {fileID: 0}
+  objectPrize: 1000
+  toggle: {fileID: 359772134}
+  shopConditionsManager: {fileID: 359772135}
+  linkedCondition: {fileID: 114959788283693394, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1282333565
 GameObject:
   m_ObjectHideFlags: 0
@@ -22311,7 +22399,7 @@ MonoBehaviour:
   m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &1346917649
 GameObject:
   m_ObjectHideFlags: 0
@@ -23920,6 +24008,7 @@ GameObject:
   - component: {fileID: 1424267177}
   - component: {fileID: 1424267178}
   - component: {fileID: 1424267179}
+  - component: {fileID: 1424267180}
   m_Layer: 5
   m_Name: MediumMultimedia
   m_TagString: Untagged
@@ -23990,18 +24079,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1424267178}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114359895970179428, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1424267179}
         m_MethodName: React
         m_Mode: 1
@@ -24074,6 +24151,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 1947199408}
   - {fileID: 593928473}
+--- !u!114 &1424267180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424267175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1424267177}
+  condition: {fileID: 114359895970179428, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1431388214
 GameObject:
   m_ObjectHideFlags: 0
@@ -24365,7 +24456,7 @@ MonoBehaviour:
   m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!114 &1456432864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24377,8 +24468,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 300
-  toggle: {fileID: 0}
+  objectPrize: 1500
+  toggle: {fileID: 212866893}
+  shopConditionsManager: {fileID: 212866892}
+  linkedCondition: {fileID: 114996930909448140, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1460245856
 GameObject:
   m_ObjectHideFlags: 0
@@ -26183,6 +26277,7 @@ GameObject:
   - component: {fileID: 1557322800}
   - component: {fileID: 1557322801}
   - component: {fileID: 1557322802}
+  - component: {fileID: 1557322803}
   m_Layer: 5
   m_Name: SimpleMultimedia
   m_TagString: Untagged
@@ -26253,18 +26348,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1557322801}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114067828586161860, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1557322802}
         m_MethodName: React
         m_Mode: 1
@@ -26337,6 +26420,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 1256588848}
   - {fileID: 723683735}
+--- !u!114 &1557322803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1557322798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1557322800}
+  condition: {fileID: 114067828586161860, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!114 &1560512286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26348,8 +26445,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 100
-  toggle: {fileID: 0}
+  objectPrize: 500
+  toggle: {fileID: 1689913407}
+  shopConditionsManager: {fileID: 1689913408}
+  linkedCondition: {fileID: 114613532173838470, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1569589655
 GameObject:
   m_ObjectHideFlags: 0
@@ -26399,7 +26499,7 @@ MonoBehaviour:
   m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &1580024368
 GameObject:
   m_ObjectHideFlags: 0
@@ -26937,6 +27037,7 @@ GameObject:
   - component: {fileID: 1608628243}
   - component: {fileID: 1608628244}
   - component: {fileID: 1608628245}
+  - component: {fileID: 1608628246}
   m_Layer: 5
   m_Name: HeatPumpHeating
   m_TagString: Untagged
@@ -27007,18 +27108,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1608628244}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114117292589539374, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1608628245}
         m_MethodName: React
         m_Mode: 1
@@ -27091,6 +27180,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 1727762131}
   - {fileID: 6930835}
+--- !u!114 &1608628246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608628241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1608628243}
+  condition: {fileID: 114117292589539374, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1614800651
 GameObject:
   m_ObjectHideFlags: 0
@@ -27743,6 +27846,7 @@ GameObject:
   - component: {fileID: 1649523170}
   - component: {fileID: 1649523169}
   - component: {fileID: 1649523171}
+  - component: {fileID: 1649523172}
   m_Layer: 5
   m_Name: ElectricOven
   m_TagString: Untagged
@@ -27824,18 +27928,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1649523169}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114851245668720206, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1649523171}
         m_MethodName: React
         m_Mode: 1
@@ -27897,6 +27989,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 326792303}
   - {fileID: 902674840}
+--- !u!114 &1649523172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1649523167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1649523170}
+  condition: {fileID: 114851245668720206, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1652758610
 GameObject:
   m_ObjectHideFlags: 0
@@ -28635,6 +28741,7 @@ GameObject:
   - component: {fileID: 1689913407}
   - component: {fileID: 1689913408}
   - component: {fileID: 1689913409}
+  - component: {fileID: 1689913410}
   m_Layer: 5
   m_Name: FuelHeating
   m_TagString: Untagged
@@ -28705,18 +28812,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1689913408}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114613532173838470, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1689913409}
         m_MethodName: React
         m_Mode: 1
@@ -28789,6 +28884,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 1322805488}
   - {fileID: 1560512286}
+--- !u!114 &1689913410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1689913405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1689913407}
+  condition: {fileID: 114613532173838470, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1693897716
 GameObject:
   m_ObjectHideFlags: 0
@@ -29585,8 +29694,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 300
-  toggle: {fileID: 0}
+  objectPrize: 1500
+  toggle: {fileID: 248212643}
+  shopConditionsManager: {fileID: 248212642}
+  linkedCondition: {fileID: 114430205281736696, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1752626495
 GameObject:
   m_ObjectHideFlags: 0
@@ -32193,6 +32305,7 @@ GameObject:
   - component: {fileID: 1882448528}
   - component: {fileID: 1882448527}
   - component: {fileID: 1882448529}
+  - component: {fileID: 1882448530}
   m_Layer: 5
   m_Name: WoodWaterHeater
   m_TagString: Untagged
@@ -32274,18 +32387,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1882448527}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114530615477572274, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1882448529}
         m_MethodName: React
         m_Mode: 1
@@ -32347,6 +32448,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 1391239759}
   - {fileID: 879465435}
+--- !u!114 &1882448530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882448525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1882448528}
+  condition: {fileID: 114530615477572274, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1889823391
 GameObject:
   m_ObjectHideFlags: 0
@@ -32392,8 +32507,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 300
+  objectPrize: 1500
   toggle: {fileID: 685337344}
+  shopConditionsManager: {fileID: 685337342}
+  linkedCondition: {fileID: 114315027674158940, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &1899490756
 GameObject:
   m_ObjectHideFlags: 0
@@ -34656,6 +34774,7 @@ GameObject:
   - component: {fileID: 2001892587}
   - component: {fileID: 2001892588}
   - component: {fileID: 2001892589}
+  - component: {fileID: 2001892590}
   m_Layer: 5
   m_Name: WoodOven
   m_TagString: Untagged
@@ -34726,18 +34845,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2001892588}
-        m_MethodName: onPurchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114812804824271698, guid: caaf50ae650376d46a396bcfb4f2af59,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Condition, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2001892589}
         m_MethodName: React
         m_Mode: 1
@@ -34810,6 +34917,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 1641265121}
   - {fileID: 2128789798}
+--- !u!114 &2001892590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2001892585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49d0ca29d30ac41ba26f92e374385f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 2001892587}
+  condition: {fileID: 114812804824271698, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &2002054313
 GameObject:
   m_ObjectHideFlags: 0
@@ -35339,8 +35460,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 300
-  toggle: {fileID: 0}
+  objectPrize: 1500
+  toggle: {fileID: 411570821}
+  shopConditionsManager: {fileID: 411570820}
+  linkedCondition: {fileID: 114406084487780956, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!1 &2033729807
 GameObject:
   m_ObjectHideFlags: 0
@@ -36486,8 +36610,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92b5dc94e8387048831741514d92ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrize: 200
+  objectPrize: 1000
   toggle: {fileID: 2001892587}
+  shopConditionsManager: {fileID: 2001892588}
+  linkedCondition: {fileID: 114812804824271698, guid: caaf50ae650376d46a396bcfb4f2af59,
+    type: 2}
 --- !u!114 &2129927278
 MonoBehaviour:
   m_ObjectHideFlags: 0

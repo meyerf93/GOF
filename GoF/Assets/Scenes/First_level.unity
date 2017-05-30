@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4509321, g: 0.5008129, b: 0.5744824, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -232,20 +232,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011044878518, guid: 458d9a11c49483c45b95e494d0136e0e,
     type: 2}
   m_PrefabInternal: {fileID: 9668944}
---- !u!114 &12518290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: you're in the living room
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!1 &18735138
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,20 +277,6 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 1778837819}
   reactionCollection: {fileID: 846587690}
---- !u!114 &26465506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: You're in the workroom
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!1001 &58876618
 Prefab:
   m_ObjectHideFlags: 0
@@ -1264,6 +1236,20 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 439132, guid: a9b21be536c3faa45909752cb53f7366, type: 2}
   m_PrefabInternal: {fileID: 126597992}
+--- !u!114 &126903110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: work finished
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1 &133564216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,20 +1292,6 @@ Transform:
   m_Father: {fileID: 671618616}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &141324839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: you have a panel heater
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!1001 &144054863
 Prefab:
   m_ObjectHideFlags: 0
@@ -1614,7 +1586,7 @@ Prefab:
     - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114876288594072478, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
@@ -1701,7 +1673,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 12518290}
+      objectReference: {fileID: 291575388}
     - target: {fileID: 114667243433982110, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2137,20 +2109,6 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 1927871626}
   reactionCollection: {fileID: 2056331240}
---- !u!114 &206281439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: Wood Cooker Purchased !
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!114 &213052598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2757,20 +2715,6 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 280480344}
   reactionCollection: {fileID: 1274243569}
---- !u!114 &307703440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: you have an electric oven
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 4.96
 --- !u!1001 &308470301
 Prefab:
   m_ObjectHideFlags: 0
@@ -2836,7 +2780,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2874,7 +2818,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 1978185956}
+      objectReference: {fileID: 2009233796}
     - target: {fileID: 1891366390125540, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_Name
       value: GasCookerReaction
@@ -3149,6 +3093,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 344690251}
   m_Mesh: {fileID: 4300000, guid: 702dc3751b1b2cf4f833ca162605cda5, type: 3}
+--- !u!1 &349541966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 349541967}
+  - component: {fileID: 349541969}
+  - component: {fileID: 349541968}
+  m_Layer: 0
+  m_Name: Work
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &349541967
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 349541966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1180.2661, y: 777.7058, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &349541968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 349541966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 126903110}
+--- !u!114 &349541969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 349541966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ebc8ab9b15a024fb26af55710502d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTime: 20
+  reactionCollection: {fileID: 349541968}
 --- !u!114 &350761680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3443,7 +3443,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reactions:
-  - {fileID: 702619254}
   - {fileID: 1120685982}
 --- !u!1001 &380252826
 Prefab:
@@ -3603,7 +3602,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -3645,7 +3644,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 987722217}
+      objectReference: {fileID: 1483563990}
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.data[1]
@@ -4226,6 +4225,20 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 1996584503}
   reactionCollection: {fileID: 640576923}
+--- !u!114 &444509751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 30 seconds left !
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1001 &461713895
 Prefab:
   m_ObjectHideFlags: 0
@@ -4402,7 +4415,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4444,7 +4457,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 1736029238}
+      objectReference: {fileID: 1413396497}
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.data[1]
@@ -5299,6 +5312,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   modifierName: fuelHeating
+--- !u!114 &592853409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Time's up !
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1001 &607180514
 Prefab:
   m_ObjectHideFlags: 0
@@ -5837,7 +5864,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -5879,7 +5906,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 141324839}
+      objectReference: {fileID: 1634451723}
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.data[1]
@@ -6034,20 +6061,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 648004667}
   m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
---- !u!114 &655263028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: you have simple multimedia
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!114 &658565096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6236,6 +6249,18 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 455584, guid: bb8b7c57ba9825b46b20b0e98c806a04, type: 2}
   m_PrefabInternal: {fileID: 667180512}
+--- !u!114 &670717419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6e070992ec756b40922549e77dce5a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  workManager: {fileID: 349541969}
 --- !u!1 &671618615
 GameObject:
   m_ObjectHideFlags: 0
@@ -6267,20 +6292,6 @@ Transform:
   m_Father: {fileID: 1751361056}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &702619254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: You're in the kitchen
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!114 &703414350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7293,7 +7304,6 @@ GameObject:
   m_Component:
   - component: {fileID: 788129830}
   - component: {fileID: 788129829}
-  - component: {fileID: 788129828}
   m_Layer: 0
   m_Name: LevelTimer
   m_TagString: Untagged
@@ -7301,19 +7311,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &788129828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 788129827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reactions:
-  - {fileID: 947362936}
 --- !u!114 &788129829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7325,8 +7322,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365f692b7ef5b854bb33bfbfac49f25b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTime: 90
-  targetReactionCollection: {fileID: 788129828}
+  targetTime: 40
+  timeUp: {fileID: 1635586960}
+  left30: {fileID: 1509058261}
+  left20: {fileID: 1665637005}
+  left10: {fileID: 2087850905}
 --- !u!4 &788129830
 Transform:
   m_ObjectHideFlags: 0
@@ -7336,7 +7336,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 934.1805, y: 772.4893, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1635586961}
+  - {fileID: 1509058262}
+  - {fileID: 1665637006}
+  - {fileID: 2087850906}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7607,7 +7611,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -7649,7 +7653,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 1401258531}
+      objectReference: {fileID: 658565096}
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.data[1]
@@ -7789,7 +7793,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -7831,7 +7835,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 1471967368}
+      objectReference: {fileID: 1852650313}
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.data[1]
@@ -8918,34 +8922,6 @@ MonoBehaviour:
   audioSource: {fileID: 203586842}
   audioClip: {fileID: 8300000, guid: 50f1c855bac32aa459b15bf4fa31e6f8, type: 3}
   delay: 0
---- !u!114 &987722217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: you have medium multimedia
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
---- !u!114 &989355490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: You have a microwave oven
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 5
 --- !u!114 &993357593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9475,7 +9451,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -9517,7 +9493,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 1336849311}
+      objectReference: {fileID: 887508338}
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.data[1]
@@ -9755,20 +9731,6 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 966902976}
   reactionCollection: {fileID: 1404499017}
---- !u!114 &1118983395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: You're in the bathroom
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!114 &1120685982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10158,7 +10120,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -10196,7 +10158,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 206281439}
+      objectReference: {fileID: 976057833}
     - target: {fileID: 1891366390125540, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_Name
       value: WoodCookerReaction
@@ -10614,7 +10576,7 @@ Prefab:
     - target: {fileID: 114363326371014572, guid: c67e65269ec1b504e979567cf9c0bac1,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4792246376593114, guid: c67e65269ec1b504e979567cf9c0bac1, type: 2}
       propertyPath: m_LocalPosition.x
@@ -10652,7 +10614,12 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 702619254}
+      objectReference: {fileID: 1120685982}
+    - target: {fileID: 114363326371014572, guid: c67e65269ec1b504e979567cf9c0bac1,
+        type: 2}
+      propertyPath: reactions.Array.data[1]
+      value: 
+      objectReference: {fileID: 1120685982}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c67e65269ec1b504e979567cf9c0bac1, type: 2}
   m_IsPrefabParent: 0
@@ -11501,20 +11468,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.9, y: 3, z: 9}
   m_Center: {x: 0, y: 1.5, z: 0}
---- !u!114 &1336849311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: Electric Cooker Purchased !
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!1001 &1338208694
 Prefab:
   m_ObjectHideFlags: 0
@@ -11686,6 +11639,20 @@ Transform:
   m_PrefabParentObject: {fileID: 4000012016014000, guid: 7f7b6a4948f75f7459b9cf95efb1da79,
     type: 2}
   m_PrefabInternal: {fileID: 1346844472}
+--- !u!114 &1352706274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 10 seconds left !
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!114 &1367054812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11729,20 +11696,6 @@ MonoBehaviour:
   description: largeMultimediaPurchased
   satisfied: 1
   hash: 1117868222
---- !u!114 &1401258531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: you have a fuel water heater
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!1 &1404499016
 GameObject:
   m_ObjectHideFlags: 0
@@ -11973,7 +11926,7 @@ Prefab:
     - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114876288594072478, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
@@ -12048,7 +12001,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 26465506}
+      objectReference: {fileID: 101334938}
     - target: {fileID: 114667243433982110, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -12078,7 +12031,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[1]
       value: 
-      objectReference: {fileID: 101334938}
+      objectReference: {fileID: 670717419}
     - target: {fileID: 114876288594072478, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
       propertyPath: conditionCollections.Array.data[0]
@@ -12124,6 +12077,16 @@ Prefab:
       propertyPath: conditionCollections.Array.data[8]
       value: 
       objectReference: {fileID: 439636134}
+    - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
+        type: 2}
+      propertyPath: reactions.Array.data[2]
+      value: 
+      objectReference: {fileID: 1956828770}
+    - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
+        type: 2}
+      propertyPath: reactions.Array.data[3]
+      value: 
+      objectReference: {fileID: 1956828770}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 46fa6ff4470251d438542696b3a8673f, type: 2}
   m_IsPrefabParent: 0
@@ -12272,20 +12235,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000012016014000, guid: 7f7b6a4948f75f7459b9cf95efb1da79,
     type: 2}
   m_PrefabInternal: {fileID: 1964859703}
---- !u!114 &1471967368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: you have large multimedia
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!114 &1477486978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12488,6 +12437,48 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011044878518, guid: 458d9a11c49483c45b95e494d0136e0e,
     type: 2}
   m_PrefabInternal: {fileID: 1504202872}
+--- !u!1 &1509058260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1509058262}
+  - component: {fileID: 1509058261}
+  m_Layer: 0
+  m_Name: left30Reaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1509058261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1509058260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 444509751}
+--- !u!4 &1509058262
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1509058260}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 788129830}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1510390466
 Prefab:
   m_ObjectHideFlags: 0
@@ -13134,6 +13125,91 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 420366, guid: fe76df88fe231b64b96045eb218382f0, type: 2}
   m_PrefabInternal: {fileID: 1634870037}
+--- !u!1 &1635586959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1635586961}
+  - component: {fileID: 1635586960}
+  m_Layer: 0
+  m_Name: timeUpReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1635586960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635586959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 947362936}
+  - {fileID: 592853409}
+--- !u!4 &1635586961
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635586959}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 788129830}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1665637004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1665637006}
+  - component: {fileID: 1665637005}
+  m_Layer: 0
+  m_Name: left20Reaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1665637005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1665637004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1692540747}
+--- !u!4 &1665637006
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1665637004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 788129830}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1667818170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13173,7 +13249,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -13215,7 +13291,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 307703440}
+      objectReference: {fileID: 1406025306}
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.data[1]
@@ -13318,6 +13394,20 @@ Transform:
   m_PrefabParentObject: {fileID: 4000012016014000, guid: 7f7b6a4948f75f7459b9cf95efb1da79,
     type: 2}
   m_PrefabInternal: {fileID: 1685822883}
+--- !u!114 &1692540747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 20 seconds left !
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1 &1693034494
 GameObject:
   m_ObjectHideFlags: 0
@@ -13526,7 +13616,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22413402, guid: 21a152d74cc659344a0a5b28b43a5254, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 338
+      value: 475
       objectReference: {fileID: 0}
     - target: {fileID: 22413402, guid: 21a152d74cc659344a0a5b28b43a5254, type: 2}
       propertyPath: m_SizeDelta.y
@@ -13877,20 +13967,6 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 1562677177}
   reactionCollection: {fileID: 1091534450}
---- !u!114 &1736029238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: you have a wood oven
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 5
 --- !u!114 &1736315539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15660,7 +15736,7 @@ Prefab:
     - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114876288594072478, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
@@ -15739,7 +15815,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 1118983395}
+      objectReference: {fileID: 987438928}
     - target: {fileID: 114667243433982110, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -15873,7 +15949,7 @@ Prefab:
     - target: {fileID: 114313847889249922, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114876288594072478, guid: 46fa6ff4470251d438542696b3a8673f,
         type: 2}
@@ -16056,6 +16132,19 @@ Transform:
   m_PrefabParentObject: {fileID: 4140197994152216, guid: 46fa6ff4470251d438542696b3a8673f,
     type: 2}
   m_PrefabInternal: {fileID: 1956081832}
+--- !u!114 &1956828770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c35dfd433ee4e46bc687ff7d421f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  modifierName: WorkToDo
 --- !u!1 &1961092978
 GameObject:
   m_ObjectHideFlags: 0
@@ -16274,20 +16363,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1972495449}
   m_Mesh: {fileID: 4300000, guid: 656f375b779461048b0cdde1b80ef0b0, type: 3}
---- !u!114 &1978185956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: Gas Cooker Purchased
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!114 &1991275328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16483,7 +16558,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -16525,7 +16600,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 989355490}
+      objectReference: {fileID: 1736315539}
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.data[1]
@@ -16676,20 +16751,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2056331238}
   m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
---- !u!114 &2058370195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441f1d9bda3ac004a83d78b33a003d79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: you have a wood panel heater
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!4 &2062281169 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011044878518, guid: 458d9a11c49483c45b95e494d0136e0e,
@@ -16713,6 +16774,48 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011044878518, guid: 458d9a11c49483c45b95e494d0136e0e,
     type: 2}
   m_PrefabInternal: {fileID: 906024820}
+--- !u!1 &2087850904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2087850906}
+  - component: {fileID: 2087850905}
+  m_Layer: 0
+  m_Name: left10Reaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2087850905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2087850904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e8b516ee4f47248a6fb33051b9f75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1352706274}
+--- !u!4 &2087850906
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2087850904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 788129830}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2088521023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16738,7 +16841,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -16780,7 +16883,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 655263028}
+      objectReference: {fileID: 1842937523}
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.data[1]
@@ -16961,7 +17064,7 @@ Prefab:
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4497359242659164, guid: 8f1fb7f36319c474bbabe0c13d00ab1f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -17003,7 +17106,7 @@ Prefab:
         type: 2}
       propertyPath: reactions.Array.data[0]
       value: 
-      objectReference: {fileID: 2058370195}
+      objectReference: {fileID: 19930511}
     - target: {fileID: 114632688525288622, guid: 8f1fb7f36319c474bbabe0c13d00ab1f,
         type: 2}
       propertyPath: reactions.Array.data[1]
@@ -17247,13 +17350,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2133504933}
-  m_LocalRotation: {x: -0.117076196, y: 0.8771333, z: -0.2711986, w: -0.37865767}
-  m_LocalPosition: {x: 32, y: 12.6, z: 21.1}
+  m_LocalRotation: {x: 0.67301935, y: -0.05888159, z: 0.06425799, w: 0.7344718}
+  m_LocalPosition: {x: 0, y: 50, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 34.362003, y: 226.7, z: 0}
+  m_LocalEulerAnglesHint: {x: 85, y: 0, z: 10}
 --- !u!1 &2140897017
 GameObject:
   m_ObjectHideFlags: 0

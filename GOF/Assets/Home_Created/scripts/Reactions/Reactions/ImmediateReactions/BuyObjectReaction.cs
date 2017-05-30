@@ -7,6 +7,8 @@ public class BuyObjectReaction : Reaction
 {
 	public int objectPrize;
 	public Toggle toggle;
+	public shopConditionsManager shopConditionsManager;
+	public Condition linkedCondition;
 
 	private MoneyController moneyController;
 
@@ -20,10 +22,11 @@ public class BuyObjectReaction : Reaction
 		if (toggle.isOn) 
 		{
 			if (moneyController.buyShopObject (objectPrize)) 
-			{
-				//text message : object Purchased
+			{				
+				shopConditionsManager.onPurchase (linkedCondition);
 			} else 
 			{
+				toggle.isOn = false;
 				//text message : not enough money
 			}
 		}
