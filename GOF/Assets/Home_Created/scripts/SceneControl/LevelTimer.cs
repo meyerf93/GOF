@@ -6,17 +6,24 @@ public class LevelTimer : MonoBehaviour {
 
 	public float targetTime;
 	public ReactionCollection timeUp;
-	public ReactionCollection timeLeft30;
-	public ReactionCollection timeLeft20;
-	public ReactionCollection timeLeft10;
+	public ReactionCollection left30;
+	public ReactionCollection left20;
+	public ReactionCollection left10;
 	
 	void Update () 
 	{
 		targetTime -= Time.deltaTime;
-		if ((int)targetTime == 30) {
-			
-		} else if ((int)targetTime == 20) {
-		} else if ((int)targetTime == 10) {
+		if ((int)targetTime == 30) 
+		{
+			timeLeft30();	
+		} 
+		else if ((int)targetTime == 20) 
+		{
+			timeLeft20 ();
+		}
+		else if ((int)targetTime == 10) 
+		{
+			timeLeft10 ();
 		}
 		if (targetTime <= 0.0f)
 		{
@@ -28,16 +35,16 @@ public class LevelTimer : MonoBehaviour {
 	{
 		timeUp.React();
 	}
-	private void TimeLeft30()
+	private void timeLeft30()
 	{
-		timeLeft30.React ();
+		left30.React ();
 	}
-	private void TimeLeft20()
+	private void timeLeft20()
 	{
-		timeLeft20.React ();
+		left20.React ();
 	}
-	private void TimeLeft10()
+	private void timeLeft10()
 	{
-		timeLeft10.React ();
+		left10.React ();
 	}
 }
