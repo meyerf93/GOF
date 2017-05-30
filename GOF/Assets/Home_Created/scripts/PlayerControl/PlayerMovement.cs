@@ -29,11 +29,14 @@ public class PlayerMovement : MonoBehaviour
 
 	public const string startingPositionKey = "starting position";
 
-	private BarModifier barModifier; 
+	private BarModifier barModifier;
+	private WorkManager workManager;
 
 	private void Start()
 	{
 		barModifier = FindObjectOfType<BarModifier>();
+		workManager = FindObjectOfType<WorkManager> ();
+
 		agent.updateRotation = false; //we'll do that ourselves
 
 		inputHoldWait = new WaitForSeconds (inputHoldDelay);
@@ -72,6 +75,11 @@ public class PlayerMovement : MonoBehaviour
 		transform.position = destinationPosition;
 		speed = 0f;
 
+		foreach (Modifier modifier in barModifier.modifiers) 
+		{
+			modifier.desactivate ();
+		}
+
 		if (currentInteractable) 
 		{
 			transform.rotation = currentInteractable.interactionLocation.rotation;
@@ -106,11 +114,12 @@ public class PlayerMovement : MonoBehaviour
 		{
 			return;
 		}
-
-		foreach (Modifier modifier in barModifier.modifiers) 
+			
+		if (workManager.isOn ()) 
 		{
-			modifier.desactivate ();
+			workManager.workEnd ();
 		}
+
 		currentInteractable = null;
 
 		PointerEventData pData = (PointerEventData)data;
@@ -134,9 +143,9 @@ public class PlayerMovement : MonoBehaviour
 			return;
 		}
 
-		foreach (Modifier modifier in barModifier.modifiers) 
+		if (workManager.isOn ()) 
 		{
-			modifier.desactivate ();
+			workManager.workEnd ();
 		}
 
 		currentInteractable = interactable;

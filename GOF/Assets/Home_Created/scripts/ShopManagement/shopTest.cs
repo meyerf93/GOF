@@ -21,7 +21,7 @@ public class shopTest : MonoBehaviour {
 	{
 		if (levelTimer == null) {
 			levelTimer = FindObjectOfType<LevelTimer> ();
-			text.text = "money :  " + (int)moneyController.getValue () +", modifier : " + barModifier.getMoneyModifier() + "\n" + 
+			text.text = "money :  " + Mathf.RoundToInt(moneyController.getValue ()) +", modifier : " + barModifier.getMoneyModifier() + "\n" + 
 				"eco :  " + (int)ecoController.getValue()  + ", modifier : " + barModifier.getEcoModifier() + "\n" 
 				+ "comfort :  " + (int)confortController.getValue()  + ", modifier : " + barModifier.getComfortModifier() +  "\n" ;
 		} else 
