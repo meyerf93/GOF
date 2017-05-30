@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barModifier: {fileID: 326792304}
-  MAX: 1000
+  MAX: 2000
 --- !u!114 &326792309
 MonoBehaviour:
   m_ObjectHideFlags: 0

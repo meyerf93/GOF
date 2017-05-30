@@ -71,14 +71,10 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Stopping(out float speed)
 	{
+
 		agent.Stop();
 		transform.position = destinationPosition;
 		speed = 0f;
-
-		foreach (Modifier modifier in barModifier.modifiers) 
-		{
-			modifier.desactivate ();
-		}
 
 		if (currentInteractable) 
 		{
@@ -86,11 +82,16 @@ public class PlayerMovement : MonoBehaviour
 			currentInteractable.Interact ();
 			currentInteractable = null;
 			StartCoroutine (waitForInteraction());
+
 		}
 	}
 
 	private void Slowing(out float speed, float distanceToDestination)
 	{
+		foreach (Modifier modifier in barModifier.modifiers) 
+		{
+			modifier.desactivate ();
+		}
 		agent.Stop ();
 		transform.position = Vector3.MoveTowards (transform.position, destinationPosition, slowingSpeed*Time.deltaTime);
 
