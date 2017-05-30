@@ -11751,7 +11751,7 @@ GameObject:
   - component: {fileID: 1509058262}
   - component: {fileID: 1509058261}
   m_Layer: 0
-  m_Name: left30
+  m_Name: left30Reaction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12439,7 +12439,7 @@ GameObject:
   - component: {fileID: 1635586961}
   - component: {fileID: 1635586960}
   m_Layer: 0
-  m_Name: timeUp
+  m_Name: timeUpReaction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12482,7 +12482,7 @@ GameObject:
   - component: {fileID: 1665637006}
   - component: {fileID: 1665637005}
   m_Layer: 0
-  m_Name: left20
+  m_Name: left20Reaction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16049,7 +16049,7 @@ GameObject:
   - component: {fileID: 2087850906}
   - component: {fileID: 2087850905}
   m_Layer: 0
-  m_Name: left10
+  m_Name: left10Reaction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
