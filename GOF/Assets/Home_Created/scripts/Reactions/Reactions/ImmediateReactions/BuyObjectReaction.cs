@@ -19,6 +19,7 @@ public class BuyObjectReaction : Reaction
 
 	protected override void ImmediateReaction ()
 	{
+
 		if (toggle.isOn) 
 		{
 			if (moneyController.buyShopObject (objectPrize)) 
