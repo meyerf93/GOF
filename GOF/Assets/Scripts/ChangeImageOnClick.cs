@@ -12,12 +12,12 @@ public class ChangeImageOnClick : MonoBehaviour {
 
     // Use this for initialization
     void Start () {	
-        displayImage.sprite = Resources.Load<Sprite>("Images/1") as Sprite;
-        displayImage.sprite = Resources.Load<Sprite>("Images/2") as Sprite;
+        displayImage.sprite = Resources.Load<Sprite>("Level_1") as Sprite;
+       /* displayImage.sprite = Resources.Load<Sprite>("Images/2") as Sprite;
         displayImage.sprite = Resources.Load<Sprite>("Images/3") as Sprite;
         displayImage.sprite = Resources.Load<Sprite>("Images/4") as Sprite;
         displayImage.sprite = Resources.Load<Sprite>("Images/5") as Sprite;
-        displayImage.sprite = Resources.Load<Sprite>("Images/6") as Sprite;
+        displayImage.sprite = Resources.Load<Sprite>("Images/6") as Sprite;*/
     }
 	
 	

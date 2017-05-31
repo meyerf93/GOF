@@ -1930,13 +1930,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 203586839}
-  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -1, y: 22, z: -6}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 20, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!82 &203586842
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4640,7 +4640,7 @@ Prefab:
     - target: {fileID: 195552126280355610, guid: aa7ba757c685c18448e105b782038517,
         type: 2}
       propertyPath: m_Speed
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114779324752248798, guid: aa7ba757c685c18448e105b782038517,
         type: 2}
@@ -7207,7 +7207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365f692b7ef5b854bb33bfbfac49f25b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTime: 40
+  targetTime: 120
   timeUp: {fileID: 1635586960}
   left30: {fileID: 1509058261}
   left20: {fileID: 1665637005}
